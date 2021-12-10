@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import '../css/lista.css';
+import {createModal} from './Modal';
 
 const api = `https://www.mocky.io/v2/5d531c4f2e0000620081ddce`;
 
@@ -10,24 +11,26 @@ interface User {
     username: string;
 }
 
-class Lista extends Component {
+
+class Lista extends Component<User>{
 
     state = {
-        users: []
+        users: [],
     }
 
     componentDidMount = async () => {
         const response = await fetch(api);
         const obj: User = await response.json();
 
-        this.setState({ users: obj });
+        this.setState({users: obj});
     }
 
-    gerarLi() {
+
+    createLi() {
         return this.state.users.map((user: User, index) => {
             console.log(user.name)
             return (
-                <li className="user" key={user.id} id={user.id}>
+                <li className="user" key={user.id} id={user.id} data-name={user.name}>
                     <img className="userAvatar" src={user.img} alt="" />
                     <div className="userInfo">
                         <div>
@@ -35,7 +38,7 @@ class Lista extends Component {
                             <p className="userID">ID: {user.id} - Username: {user.username}</p>
                         </div>
                         <div className="payButton">
-                            <button>Pagar</button>
+                        <button onClick={() => {createModal(user.name)}}>Pagar</button>
                         </div>
                     </div>
                 </li>
@@ -46,10 +49,11 @@ class Lista extends Component {
     render() {
         return (
             <ul>
-                {this.gerarLi()}
+                {this.createLi()}
             </ul>
         )
     }
 }
+
 
 export default Lista;
