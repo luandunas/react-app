@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/luandunas/react-app/static/css/main.fcb81056.chunk.css",
+    "main.js": "/luandunas/react-app/static/js/main.e6b80082.chunk.js",
+    "main.js.map": "/luandunas/react-app/static/js/main.e6b80082.chunk.js.map",
+    "runtime-main.js": "/luandunas/react-app/static/js/runtime-main.182a070b.js",
+    "runtime-main.js.map": "/luandunas/react-app/static/js/runtime-main.182a070b.js.map",
+    "static/js/2.e5358fe0.chunk.js": "/luandunas/react-app/static/js/2.e5358fe0.chunk.js",
+    "static/js/2.e5358fe0.chunk.js.map": "/luandunas/react-app/static/js/2.e5358fe0.chunk.js.map",
+    "index.html": "/luandunas/react-app/index.html",
+    "static/css/main.fcb81056.chunk.css.map": "/luandunas/react-app/static/css/main.fcb81056.chunk.css.map",
+    "static/js/2.e5358fe0.chunk.js.LICENSE.txt": "/luandunas/react-app/static/js/2.e5358fe0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.182a070b.js",
+    "static/js/2.e5358fe0.chunk.js",
+    "static/css/main.fcb81056.chunk.css",
+    "static/js/main.e6b80082.chunk.js"
+  ]
+}
