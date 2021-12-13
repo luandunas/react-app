@@ -70,7 +70,7 @@ class Lista extends Component<User>{
     render() {
         return (
             <div>
-                {/* Chamando o Modal passando props para a estrutura dele. */}
+                {/* Chamando o Modal passando props para a estrutura dele. Ressalta para o props "onClose" que passa uma função para alterar o state DESTE componente em outro componente*/}
                 <Modal user_id={this.state.user_id} data-name={this.state.modalUsername} show={this.state.show} onClose={() => {this.setState({show: false})}}></Modal>
                 <ul>
                     {/* Chamando função para criar as li. */}

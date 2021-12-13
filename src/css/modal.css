@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 html, body{
@@ -34,7 +35,7 @@ html, body{
 }
 
 .modalHeader > .closeBtn{
-    margin-right: 50px;
+    margin-right: 20px;
     padding: 5px;
 }
 
@@ -63,6 +64,10 @@ html, body{
 
 .modalBody > button:hover{
     cursor: pointer;
+}
+
+.paymentStatus{
+    padding: 40px;
 }
 
 .username{
